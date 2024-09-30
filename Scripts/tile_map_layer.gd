@@ -35,5 +35,5 @@ func generate_platform(platform_length: int = 65):
 
 func _collision_shape_update(platform_length: float):
     collision_shape = $CharacterBody2D/CollisionShape2D.shape
-    collision_shape.extents = Vector2(platform_length/2, PIXELS/2)
-    $CharacterBody2D/CollisionShape2D.position = Vector2(platform_length/2,PIXELS/2)
+    collision_shape.set_size(Vector2(platform_length, PIXELS))
+    $CharacterBody2D/CollisionShape2D.position = Vector2(platform_length,PIXELS)/2
