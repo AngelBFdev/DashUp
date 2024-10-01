@@ -31,9 +31,9 @@ func generate_platform(platform_length: int = 65):
             set_cell(Vector2(i, 0), 0, Vector2i(last_tile - 1, random_tile))
         else:
             set_cell(Vector2(i, 0), 0, Vector2i(PIXELS - 1, random_tile))
-    _collision_shape_update(platform_length)
+    _update_collision_shape(platform_length)
 
-func _collision_shape_update(platform_length: float):
+func _update_collision_shape(platform_length: float):
     collision_shape = $CharacterBody2D/CollisionShape2D.shape
     collision_shape.set_size(Vector2(platform_length, PIXELS))
     $CharacterBody2D/CollisionShape2D.position = Vector2(platform_length,PIXELS)/2
