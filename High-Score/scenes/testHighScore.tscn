@@ -1,17 +1,18 @@
-[gd_scene load_steps=3 format=3 uid="uid://cb8koypmvjdat"]
+[gd_scene load_steps=4 format=3 uid="uid://cb8koypmvjdat"]
 
-[ext_resource type="Script" path="res://scenes/testHighScore.gd" id="1_1aoqr"]
-[ext_resource type="FontFile" uid="uid://ck1u6sbw0cmkt" path="res://scenes/Vermin Vibes 1989.ttf" id="2_08s2x"]
+[ext_resource type="Script" path="res://Scripts/testHighScore.gd" id="1_1aoqr"]
+[ext_resource type="FontFile" uid="uid://ck1u6sbw0cmkt" path="res://high-score/scenes/Vermin Vibes 1989.ttf" id="2_08s2x"]
+[ext_resource type="PackedScene" uid="uid://bmgg254ucp8mn" path="res://assets/high_score.tscn" id="3_yy554"]
 
 [node name="TestMenu" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 3.0
-offset_top = 2.0
-offset_right = 3.0
-offset_bottom = 2.0
+offset_left = 6.0
+offset_top = 24.0
+offset_right = 6.0
+offset_bottom = 24.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_1aoqr")
@@ -23,30 +24,30 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -359.0
-offset_top = -226.0
-offset_right = 357.0
-offset_bottom = -117.0
+offset_left = -357.0
+offset_top = -286.0
+offset_right = 359.0
+offset_bottom = -177.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0.670588, 0.901961, 1)
 theme_override_fonts/font = ExtResource("2_08s2x")
-theme_override_font_sizes/font_size = 50
+theme_override_font_sizes/font_size = 24
 text = "Prueba del sistema High Score"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Label2" type="Label" parent="."]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = -1
 anchor_left = 0.5
-anchor_top = 0.5
+anchor_top = 0.479
 anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -194.0
-offset_top = -56.0
-offset_right = 100.0
-offset_bottom = 25.0
+anchor_bottom = 0.479
+offset_left = -180.0
+offset_top = -104.56
+offset_right = 114.0
+offset_bottom = -23.56
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0.670588, 0.901961, 1)
@@ -56,48 +57,13 @@ text = "Puntuacion:"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label3" type="Label" parent="."]
+[node name="high_score" parent="." instance=ExtResource("3_yy554")]
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.498
-anchor_top = 0.693
-anchor_right = 0.498
-anchor_bottom = 0.693
-offset_left = -524.696
-offset_top = -64.064
-offset_right = 525.304
-offset_bottom = 75.936
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_color = Color(0, 0.670588, 0.901961, 1)
-theme_override_fonts/font = ExtResource("2_08s2x")
-theme_override_font_sizes/font_size = 30
-text = "Haz clic en cualquier parte de la pantalla para ganar puntos!!
-
-Si no haces clic en la pantalla durante un tiempo perderas puntos, cuidado!!"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Label4" type="Label" parent="."]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.611
-anchor_top = 0.5
-anchor_right = 0.611
-anchor_bottom = 0.5
-offset_left = -58.872
-offset_top = -40.0
-offset_right = -16.872
-offset_bottom = 7.0
-theme_override_colors/font_color = Color(0, 0.670588, 0.901961, 1)
-theme_override_fonts/font = ExtResource("2_08s2x")
-theme_override_font_sizes/font_size = 40
-text = "0"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Hurry" type="Timer" parent="."]
-wait_time = 0.3
-one_shot = true
-
-[connection signal="timeout" from="Hurry" to="." method="_on_hurry_timeout"]
+anchor_left = 0.797
+anchor_top = 0.379
+anchor_right = 0.797
+anchor_bottom = 0.379
+offset_left = -19.92
+offset_top = -17.56
+offset_right = 20.08
+offset_bottom = 17.44

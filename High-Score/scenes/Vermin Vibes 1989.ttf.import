@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://ck1u6sbw0cmkt"
-path="res://.godot/imported/Vermin Vibes 1989.ttf-cd0c0afc7cd3a7a13c6e451b897dcb62.fontdata"
+path="res://.godot/imported/Vermin Vibes 1989.ttf-186c930564c191ca9844ae157313b00b.fontdata"
 
 [deps]
 
-source_file="res://scenes/Vermin Vibes 1989.ttf"
-dest_files=["res://.godot/imported/Vermin Vibes 1989.ttf-cd0c0afc7cd3a7a13c6e451b897dcb62.fontdata"]
+source_file="res://high-score/scenes/Vermin Vibes 1989.ttf"
+dest_files=["res://.godot/imported/Vermin Vibes 1989.ttf-186c930564c191ca9844ae157313b00b.fontdata"]
 
 [params]
 
