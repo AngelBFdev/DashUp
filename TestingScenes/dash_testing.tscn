@@ -1,8 +1,14 @@
 [gd_scene load_steps=8 format=3 uid="uid://o8u2qbqvpa1b"]
 
+<<<<<<< HEAD
 [ext_resource type="Texture2D" uid="uid://d0ooxx1kr33p3" path="res://sprites/test_platform_v1.png" id="1_ex165"]
 [ext_resource type="Script" path="res://scripts/character_body_2d.gd" id="2_5tpvl"]
 [ext_resource type="Texture2D" uid="uid://u1lndgijmhr8" path="res://sprites/character_v1.png" id="3_ux56x"]
+=======
+[ext_resource type="Texture2D" uid="uid://d0ooxx1kr33p3" path="res://Sprites/test_platform_v1.png" id="1_ex165"]
+[ext_resource type="Script" path="res://Scripts/character.gd" id="2_5tpvl"]
+[ext_resource type="Texture2D" uid="uid://u1lndgijmhr8" path="res://Sprites/character_v1.png" id="3_ux56x"]
+>>>>>>> a8620345637ad708dc242baf45e0d9ab42e1719e
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rrb1d"]
 texture = ExtResource("1_ex165")
