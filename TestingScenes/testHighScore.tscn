@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://cb8koypmvjdat"]
 
-[ext_resource type="Script" path="res://Scripts/testHighScore.gd" id="1_1aoqr"]
-[ext_resource type="FontFile" uid="uid://ck1u6sbw0cmkt" path="res://high-score/scenes/Vermin Vibes 1989.ttf" id="2_08s2x"]
-[ext_resource type="PackedScene" uid="uid://bmgg254ucp8mn" path="res://assets/high_score.tscn" id="3_yy554"]
+[ext_resource type="Script" path="res://scripts/testHighScore.gd" id="1_noxaa"]
+[ext_resource type="FontFile" uid="uid://ck1u6sbw0cmkt" path="res://fonts/Vermin Vibes 1989.ttf" id="2_72p67"]
+[ext_resource type="PackedScene" uid="uid://bmgg254ucp8mn" path="res://assets/high_score.tscn" id="3_ih0ko"]
 
 [node name="TestMenu" type="Control"]
 layout_mode = 3
@@ -15,7 +15,7 @@ offset_right = 6.0
 offset_bottom = 24.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_1aoqr")
+script = ExtResource("1_noxaa")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 1
@@ -31,7 +31,7 @@ offset_bottom = -177.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0.670588, 0.901961, 1)
-theme_override_fonts/font = ExtResource("2_08s2x")
+theme_override_fonts/font = ExtResource("2_72p67")
 theme_override_font_sizes/font_size = 24
 text = "Prueba del sistema High Score"
 horizontal_alignment = 1
@@ -51,13 +51,13 @@ offset_bottom = -23.56
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0.670588, 0.901961, 1)
-theme_override_fonts/font = ExtResource("2_08s2x")
+theme_override_fonts/font = ExtResource("2_72p67")
 theme_override_font_sizes/font_size = 40
 text = "Puntuacion:"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="high_score" parent="." instance=ExtResource("3_yy554")]
+[node name="high_score" parent="." instance=ExtResource("3_ih0ko")]
 layout_mode = 1
 anchor_left = 0.797
 anchor_top = 0.379
