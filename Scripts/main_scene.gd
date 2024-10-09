@@ -31,7 +31,6 @@ func _process(delta: float) -> void:
 
 func _create_platform(platform_instance: TileMapLayer):
     var random_num = randi() % random_length
-    print(random_num)
     platform_instance.generate_platform(random_num)
     platform_instance.position = Vector2(x_position,current_y)
     current_y += y_increment
