@@ -1,0 +1,69 @@
+[gd_scene load_steps=4 format=3 uid="uid://cb8koypmvjdat"]
+
+[ext_resource type="Script" path="res://scripts/testHighScore.gd" id="1_noxaa"]
+[ext_resource type="FontFile" uid="uid://ck1u6sbw0cmkt" path="res://fonts/Vermin Vibes 1989.ttf" id="2_72p67"]
+[ext_resource type="PackedScene" uid="uid://bmgg254ucp8mn" path="res://Components/high_score.tscn" id="3_ih0ko"]
+
+[node name="TestMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 6.0
+offset_top = 24.0
+offset_right = 6.0
+offset_bottom = 24.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_noxaa")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -357.0
+offset_top = -286.0
+offset_right = 359.0
+offset_bottom = -177.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0.670588, 0.901961, 1)
+theme_override_fonts/font = ExtResource("2_72p67")
+theme_override_font_sizes/font_size = 24
+text = "Prueba del sistema High Score"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.479
+anchor_right = 0.5
+anchor_bottom = 0.479
+offset_left = -180.0
+offset_top = -104.56
+offset_right = 114.0
+offset_bottom = -23.56
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0.670588, 0.901961, 1)
+theme_override_fonts/font = ExtResource("2_72p67")
+theme_override_font_sizes/font_size = 40
+text = "Puntuacion:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="high_score" parent="." instance=ExtResource("3_ih0ko")]
+layout_mode = 1
+anchor_left = 0.797
+anchor_top = 0.379
+anchor_right = 0.797
+anchor_bottom = 0.379
+offset_left = -19.92
+offset_top = -17.56
+offset_right = 20.08
+offset_bottom = 17.44

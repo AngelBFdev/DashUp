@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://b25gccrt0gw"]
 
-[ext_resource type="Script" path="res://Scripts/button.gd" id="1_5hsi4"]
+[ext_resource type="Script" path="res://scripts/button.gd" id="1_5hsi4"]
 [ext_resource type="PackedScene" uid="uid://o8u2qbqvpa1b" path="res://TestingScenes/dash_testing.tscn" id="2_7xh47"]
 
 [node name="Button" type="Button"]
