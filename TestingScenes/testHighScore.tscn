@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/testHighScore.gd" id="1_noxaa"]
 [ext_resource type="FontFile" uid="uid://ck1u6sbw0cmkt" path="res://fonts/Vermin Vibes 1989.ttf" id="2_72p67"]
-[ext_resource type="PackedScene" uid="uid://bmgg254ucp8mn" path="res://assets/high_score.tscn" id="3_ih0ko"]
+[ext_resource type="PackedScene" uid="uid://bmgg254ucp8mn" path="res://Components/high_score.tscn" id="3_ih0ko"]
 
 [node name="TestMenu" type="Control"]
 layout_mode = 3

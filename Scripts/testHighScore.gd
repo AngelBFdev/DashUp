@@ -10,5 +10,5 @@ func _process(_delta):
     pass
     
 func _input(event: InputEvent):
-    if Input.is_action_just_pressed("Left_Click") or event is InputEventScreenTouch:
+    if event is InputEventMouseButton or event is InputEventScreenTouch:
         $high_score.increase_score()
